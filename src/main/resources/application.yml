@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Inventory-Service
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+
+server:
+  servlet:
+    context-path: /inventory
+  port: 8080
+  error:
+    include-message: always
+
+inventory:
+
+okta:
+  oauth2:
+    issuer: ${AUTH_ISSUER}
+    audience: ${AUTH_AUDIENCE}
